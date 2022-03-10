@@ -1,0 +1,13 @@
+name: Beep boop
+
+on:
+  create:
+    tags:
+      - v*
+
+jobs:
+  beep-boop:
+    runs-on: ubuntu-latest
+    name: Beep boop!
+    steps:
+      - uses: actions/checkout@v3
